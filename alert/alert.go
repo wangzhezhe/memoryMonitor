@@ -95,7 +95,8 @@ func MemoryAlert(nodeIP string, containerID string, memoryPercentage int) error 
 	host := "smtp.163.com:25"
 	user := "18767169274@163.com"
 	password := "cformalert123456"
-	mailList := []string{"zhewang@daocloud.io", "zg.zhu@daocloud.io", "davidz@cform.io"}
+	//mailList := []string{"zhewang@daocloud.io", "zg.zhu@daocloud.io", "davidz@cform.io"}
+	mailList := []string{"zhewang@daocloud.io"}
 	alertInfo := "Cform production alert!!! " + "nodeIP:" + nodeIP + " ContainerID: " + containerID + " MemoryPercentage: " + strconv.Itoa(memoryPercentage) + "%"
 	subject := "Alert from daocloud"
 	body := `
